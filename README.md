@@ -16,7 +16,7 @@
    
 5. Modifica/Eliminazione dei post. gli utenti devono poter modificare ed eliminare i post.
    
-7. Stile: l'applicazione deve essere ben stilizzata e responsiva, garantendo una buona esperienza su desktop e dispositiv mobile.
+7. Stile: l'applicazione deve essere ben stilizzata e responsiva, garantendo una buona esperienza su desktop e dispositivi mobile.
 
 ## Requisiti tecnici
 
