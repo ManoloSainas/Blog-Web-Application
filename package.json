@@ -1,0 +1,17 @@
+{
+  "name": "blog-web-application",
+  "version": "1.0.0",
+  "description": "• L'obiettivo di questo progetto è creare un'applicazione web di tipo Blog utilizzando Node.js, Express.js ed EJS.\r • L'applicazione permetterà agli utenti di creare e visualizzare post del blog.\r • I post non verranno salvati tra una sessione e l'altra, poiché in questa versione non verrà utilizzato alcun database.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manolo Sainas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
