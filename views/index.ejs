@@ -4,19 +4,21 @@
 
 <form action="/submit" method="POST">
   <label for="title">Title:</label><br>
-  <input type="text"name="title" value=""><br>
+  <input type="text" name="title" value=""><br>
   <label for="blogPost">Blog Post:</label><br>
-  <textarea name="blogPost" value="" rows="6" cols="70"></textarea><br><br>
+  <textarea name="blogPost" rows="6" cols="70"></textarea><br><br>
   <input type="submit" value="send post">
 </form> 
 
 <div>
-    <% if(locals.title && locals.bodyPost) { %>
-        <h4>Title: <br><%= title%> </h4>
-        <h5>Post: <br><%= bodyPost%> </h5>
-    <% }else { %>
-        <h3>No Post yes</h3>
-    <% } %> 
+    <% if(posts.length === 0){ %>
+        <h3>No posts yet</h3>
+    <% } else { %>
+        <% posts.forEach(post => { %>
+            <h4>Title: <br><%= post.title %></h4>
+            <h5>Post: <br><%= post.body %></h5>
+        <% }) %>
+    <% } %>
 </div>
 
 <%- include("partials/footer.ejs") %>
