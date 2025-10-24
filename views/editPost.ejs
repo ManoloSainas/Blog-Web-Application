@@ -3,13 +3,18 @@
 <h3>Edit the post</h3>
 <% if (typeof index !== 'undefined') { %>
 <form action="/editPost" method="POST">
-  <input type="hidden" name="index" value="<%= index %>">  
-  <label for="title">Title:</label><br>
-  <input type="text" name="title" value="<%= posts[index].title %>" required><br>
-  <label for="blogPost">Blog Post:</label><br>
-  <textarea name="blogPost" rows="6" cols="70" required><%= posts[index].body %></textarea><br><br>
-  <input type="submit" value="Save changes">
+  <input type="hidden" name="index" value="<%= index %>" />
+  <label for="title">Title:</label><br />
+  <input
+    type="text"
+    name="title"
+    value="<%= posts[index].title %>"
+    required
+  /><br />
+  <label for="blogPost">Blog Post:</label><br />
+  <textarea name="blogPost" rows="6" cols="70" required>
+<%= posts[index].body %></textarea
+  ><br /><br />
+  <input type="submit" value="Save changes" />
 </form>
-<% } %>
-
-<%- include("partials/footer.ejs") %>
+<% } %> <%- include("partials/footer.ejs") %>
