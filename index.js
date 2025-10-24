@@ -12,6 +12,11 @@ app.get("/", (req, res) => {
     res.render("index.ejs", {posts})
 })
 
+app.get("/editPost", (req, res) => {
+    const index = req.query.index; 
+    res.render("editPost.ejs", {posts, index})
+})
+
 app.post("/submit", (req, res) => {
     const title = req.body.title.trim()
     const body = req.body.blogPost.trim()
@@ -20,6 +25,15 @@ app.post("/submit", (req, res) => {
     }
     res.redirect("/");
 })
+
+app.post("/editPost", (req, res) => {
+    const index = req.body.index;
+    if (posts[index]) {
+        posts[index].title = req.body.title.trim();
+        posts[index].body = req.body.blogPost.trim();
+    }
+    res.redirect("/");
+});
 
 app.post("/deletePost", (req, res) => {
     const index = req.body.index;

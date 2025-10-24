@@ -17,6 +17,10 @@
         <% posts.forEach((post, index) => { %>
             <h4>Title: <br><%= post.title %></h4>
             <h5>Post: <br><%= post.body %></h5>
+            <form action="/editPost?index=<%= index %>" method="GET">
+                <input type="hidden" name="index" value="<%= index %>">
+                <button type="submit">Edit</button>
+            </form>
             <form action="/deletePost" method="POST">
                 <input type="hidden" name="index" value="<%= index %>">
                 <button type="submit">Delete</button>
