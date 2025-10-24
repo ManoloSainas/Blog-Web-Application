@@ -4,9 +4,9 @@
 
 <form action="/submit" method="POST">
   <label for="title">Title:</label><br>
-  <input type="text" name="title" value=""><br>
+  <input type="text" name="title" required><br>
   <label for="blogPost">Blog Post:</label><br>
-  <textarea name="blogPost" rows="6" cols="70"></textarea><br><br>
+  <textarea name="blogPost" rows="6" cols="70" required></textarea><br><br>
   <input type="submit" value="send post">
 </form> 
 
@@ -14,9 +14,13 @@
     <% if(posts.length === 0){ %>
         <h3>No posts yet</h3>
     <% } else { %>
-        <% posts.forEach(post => { %>
+        <% posts.forEach((post, index) => { %>
             <h4>Title: <br><%= post.title %></h4>
             <h5>Post: <br><%= post.body %></h5>
+            <form action="/deletePost" method="POST">
+                <input type="hidden" name="index" value="<%= index %>">
+                <button type="submit">Delete</button>
+            </form>
         <% }) %>
     <% } %>
 </div>

@@ -6,7 +6,6 @@ const port = 3000
 const posts = []
 
 app.use(bodyParser.urlencoded({extended: true}))
-
 app.use(express.static("public"))
 
 app.get("/", (req, res) => {
@@ -14,7 +13,17 @@ app.get("/", (req, res) => {
 })
 
 app.post("/submit", (req, res) => {
-    posts.push({ title: req.body.title, body: req.body.blogPost });
+    const title = req.body.title.trim()
+    const body = req.body.blogPost.trim()
+    if(title && body){
+           posts.push({ title, body });
+    }
+    res.redirect("/");
+})
+
+app.post("/deletePost", (req, res) => {
+    const index = req.body.index;
+    posts.splice(index, 1);
     res.redirect("/");
 })
 
