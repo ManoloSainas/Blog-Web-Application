@@ -1,25 +1,25 @@
 # Blog Web Application
 
-## Descrizione del progetto
+## Project Description
 
-• L'obiettivo di questo progetto è creare un'applicazione web di tipo Blog utilizzando Node.js, Express.js ed EJS.
+• The goal of this project is to create a Blog-type web application using Node.js, Express.js, and EJS.
 
-• L'applicazione permetterà agli utenti di creare e visualizzare post del blog.
+• The application allows users to create and view blog posts.
 
-• I post non verranno salvati tra una sessione e l'altra, poiché in questa versione non verrà utilizzato alcun database.
+• Posts will not be saved between sessions, as no database will be used in this version.
 
-##  Funzionalità
+##  Features
 
-1. Creazione dei post: gli utenti devono poter creare nuovi post.
+1. Post creation: users can create new blog posts.
    
-3. Visualizzazione dei post: la home page deve mostrare tutti i post creati.
+3. Post visualization: the home page displays all created posts.
    
-5. Modifica/Eliminazione dei post. gli utenti devono poter modificare ed eliminare i post.
+5. Edit/Delete posts: users can edit and delete existing posts.
    
-7. Stile: l'applicazione deve essere ben stilizzata e responsiva, garantendo una buona esperienza su desktop e dispositivi mobile.
+7. Styling: the application should be well-styled and responsive, providing a good experience on both desktop and mobile devices.
 
-## Requisiti tecnici
+## Technical Requirements
 
-1. Node.js e Express.hs: l'applicazione sarà un server web costruito con Node.js ed Express.js. Express gestirà il routing e i middleware.
+1. Node.js and Express.js: the application will be a web server built with Node.js and Express.js. Express will handle routing and middleware.
    
-3. EJS: verrà utilizzato come motore di template per generare HTML dinamico in base allo stato dell'applicazione.
+3. EJS: used as a template engine to generate dynamic HTML based on the application's state.
