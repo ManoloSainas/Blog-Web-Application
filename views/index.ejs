@@ -1,14 +1,29 @@
 <%- include("partials/header.ejs") %>
 
-<h3>Insert a new post</h3>
-
-<form action="/submit" method="POST">
-  <label for="title">Title:</label><br />
-  <input type="text" name="title" required /><br />
-  <label for="blogPost">Blog Post:</label><br />
-  <textarea name="blogPost" rows="6" cols="70" required></textarea><br /><br />
-  <input type="submit" value="send post" />
-</form>
+<div class="form-homepage">
+  <h3 class="h3">Insert a new post</h3>
+  <form action="/submit" method="POST">
+    <div class="mb-3">
+      <label class="form-label" for="title">Title:</label>
+      <input class="form-control" type="text" name="title" id="title" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="blogPost">Blog Post:</label>
+      <textarea
+        class="form-control"
+        name="blogPost"
+        rows="6"
+        id="blogPost"
+        required
+      ></textarea
+      >
+    </div>
+    <div class="send-post-button">
+      <button class="btn btn-primary" type="submit">Send post</button>
+    </div>
+    
+  </form>
+</div>
 
 <div>
   <% if(posts.length === 0){ %>
