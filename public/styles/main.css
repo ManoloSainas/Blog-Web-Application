@@ -11,3 +11,8 @@
   display: flex;
   justify-content: center;
 }
+
+.custom-footer {
+  background-color: #b3fffabb;
+  color: #000000;
+}
