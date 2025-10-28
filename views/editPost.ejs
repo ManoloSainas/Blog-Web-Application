@@ -1,20 +1,29 @@
 <%- include("partials/header.ejs") %>
 
-<h3>Edit the post</h3>
-<% if (typeof index !== 'undefined') { %>
-<form action="/editPost" method="POST">
-  <input type="hidden" name="index" value="<%= index %>" />
-  <label for="title">Title:</label><br />
-  <input
-    type="text"
-    name="title"
-    value="<%= posts[index].title %>"
-    required
-  /><br />
-  <label for="blogPost">Blog Post:</label><br />
-  <textarea name="blogPost" rows="6" cols="70" required>
+<div class="form-edit">
+  <h3 class="h3">Edit the post</h3>
+  <% if (typeof index !== 'undefined') { %>
+  <form action="/editPost" method="POST">
+    <input type="hidden" name="index" value="<%= index %>" />
+    <div class="mb-3">
+      <label class="form-label" for="title">Title:</label>
+      <input
+      class="form-control"
+        type="text"
+        name="title"
+        value="<%= posts[index].title %>"
+        required
+      />
+    </div>
+
+    <label class="form-label" for="blogPost">Blog Post:</label>
+    <textarea class="form-control" name="blogPost" rows="6" required>
 <%= posts[index].body %></textarea
-  ><br /><br />
-  <input type="submit" value="Save changes" />
-</form>
+    >
+    <div class="mb-3"></div>
+    <div class="send-post-button">
+      <button class="btn btn-primary" type="submit">Send post</button>
+    </div>
+  </form>
+</div>
 <% } %> <%- include("partials/footer.ejs") %>
