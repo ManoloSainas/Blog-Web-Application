@@ -5,7 +5,13 @@
   <form action="/submit" method="POST">
     <div class="mb-3">
       <label class="form-label" for="title">Title:</label>
-      <input class="form-control" type="text" name="title" id="title" required />
+      <input
+        class="form-control"
+        type="text"
+        name="title"
+        id="title"
+        required
+      />
     </div>
     <div class="mb-3">
       <label class="form-label" for="blogPost">Blog Post:</label>
@@ -15,32 +21,35 @@
         rows="6"
         id="blogPost"
         required
-      ></textarea
-      >
+      ></textarea>
     </div>
     <div class="send-post-button">
       <button class="btn btn-primary" type="submit">Send post</button>
     </div>
-    
   </form>
 </div>
 
-<hr class="border border-1 opacity-75">
+<hr class="border border-1 opacity-75" />
 
-<div>
+<div class="container mt-5 post">
   <% if(posts.length === 0){ %>
-  <h3>No posts yet</h3>
+  <h3 class="text-center text-muted">No posts yet</h3>
   <% } else { %> <% posts.forEach((post, index) => { %>
-  <h4>Title: <br /><%= post.title %></h4>
-  <h5>Post: <br /><%= post.body %></h5>
-  <form action="/editPost?index=<%= index %>" method="GET">
-    <input type="hidden" name="index" value="<%= index %>" />
-    <button type="submit">Edit</button>
-  </form>
-  <form action="/deletePost" method="POST">
-    <input type="hidden" name="index" value="<%= index %>" />
-    <button type="submit">Delete</button>
-  </form>
+  <div class="border rounded p-3 mb-3">
+    <h4>Title: <br /><span> <%= post.title %> </span></h4>
+    <h5>Post: <br /><span> <%= post.body %> </span></h5>
+    <div d-flex gap-2>
+      <form action="/editPost?index=<%= index %>" method="GET" class="m-0">
+        <input type="hidden" name="index" value="<%= index %>" />
+        <button type="submit" class="btn btn-warning btn-sm">Edit</button>
+      </form>
+      <form action="/deletePost" method="POST" class="m-0">
+        <input type="hidden" name="index" value="<%= index %>" />
+        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+      </form>
+    </div>
+  </div>
+
   <% }) %> <% } %>
 </div>
 

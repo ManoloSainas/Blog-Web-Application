@@ -1,4 +1,4 @@
-.form-homepage, .form-edit {
+.form-homepage, .form-edit, .post {
   display: flex;
   flex-direction: column;
   align-items: center;
