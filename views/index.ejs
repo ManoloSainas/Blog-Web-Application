@@ -38,7 +38,7 @@
   <div class="border rounded p-3 mb-3">
     <h4>Title: <br /><span> <%= post.title %> </span></h4>
     <h5>Post: <br /><span> <%= post.body %> </span></h5>
-    <div d-flex gap-2>
+    <div class="d-flex gap-2"2>
       <form action="/editPost?index=<%= index %>" method="GET" class="m-0">
         <input type="hidden" name="index" value="<%= index %>" />
         <button type="submit" class="btn btn-warning btn-sm">Edit</button>
