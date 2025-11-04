@@ -8,13 +8,39 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 const posts = [];
+let selectedIndex = 0;
+
+app.set("view engine", "ejs");
+app.set("views", "./views");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use('/bootstrap-icons', express.static(__dirname + '/node_modules/bootstrap-icons/font'));
 
-app.get('/', (req, res) => {
-  res.render('index.ejs', { posts });
+app.get("/", (req, res) => {
+  res.render("index", { posts, selectedIndex });
+});
+
+app.get("/next", (req, res) => {
+  if (posts.length > 0) {
+    if (selectedIndex < posts.length - 1) {
+      selectedIndex++;
+    } else {
+      selectedIndex = 0; 
+    }
+  }
+  res.redirect("/");
+});
+
+app.get("/prev", (req, res) => {
+  if (posts.length > 0) {
+    if (selectedIndex > 0) {
+      selectedIndex--;
+    } else {
+      selectedIndex = posts.length - 1; 
+    }
+  }
+  res.redirect("/");
 });
 
 app.get('/editPost', (req, res) => {
@@ -41,8 +67,19 @@ app.post('/editPost', (req, res) => {
 });
 
 app.post('/deletePost', (req, res) => {
-  const index = req.body.index;
-  posts.splice(index, 1);
+  const index = parseInt(req.body.index);
+  if (posts[index]) {
+    posts.splice(index, 1);
+
+    if (selectedIndex >= posts.length) {
+      selectedIndex = posts.length - 1;
+    }
+  }
+
+  if (posts.length === 0) {
+    selectedIndex = 0;
+  }
+
   res.redirect('/');
 });
 
