@@ -1,3 +1,5 @@
+/* Stile per i form e per i post */
+
 .form-homepage, .form-edit, .post {
   display: flex;
   flex-direction: column;
@@ -5,12 +7,28 @@
   justify-content: center;
 }
 
+/* Stile per il button */
+
 .send-post-button {
   display: flex;
   justify-content: center;
 }
 
+/* Stile per il footer */
+
 .custom-footer {
   background-color: #b3fffabb;
   color: #000000;
+}
+
+/* Gestione del testo presente nel post */
+
+.multiline-truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 20; /* Mostra fino a 20 righe */
+  line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word; 
 }
