@@ -51,8 +51,15 @@ app.get('/editPost', (req, res) => {
 app.post('/submit', (req, res) => {
   const title = req.body.title.trim();
   const body = req.body.blogPost.trim();
+  const date = new Date().toLocaleString('it-IT', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });;
   if (title && body) {
-    posts.push({ title, body });
+    posts.push({ title, body, date });
   }
   res.redirect('/');
 });

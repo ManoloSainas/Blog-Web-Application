@@ -1,5 +1,9 @@
 <%- include("partials/header.ejs") %>
 
+<a href="/" class="btn btn-secondary ms-5 btn-lg">
+  Go back
+</a>
+
 <div class="form-edit">
   <h3 class="h3">Edit the post</h3>
   <% if (typeof index !== 'undefined') { %>
@@ -22,8 +26,9 @@
     >
     <div class="mb-3"></div>
     <div class="send-post-button">
-      <button class="btn btn-primary" type="submit">Send post</button>
+      <button class="btn btn-primary" type="submit">Send post</button> 
     </div>
+   
   </form>
 </div>
 <% } %> <%- include("partials/footer.ejs") %>
