@@ -1,5 +1,23 @@
 # Blog Web Application
 
+## Live Demo and Resources
+
+To explore how the application works, the following resources are available:
+
+• Live Application: The project is hosted on Render.com and can be tested at
+
+https://blog-web-application-lkhg.onrender.com
+
+(It may take up to one minute for the app to start, as it is hosted on a free service.)
+
+• Demo Video: A demonstration video showing the main features of the application is available on YouTube at
+
+https://www.youtube.com/watch?v=eR4eT8EPa1g
+
+•Screenshots: The main screens of the application can be found in the folder 
+
+"Schermate - Blog Web Application" available in this GitHub repository.
+
 ## Technologies Used
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
