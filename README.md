@@ -16,12 +16,16 @@ To explore how the application works, the following resources are available:
 
 •Screenshots: The main screens of the application can be found in the folder "Schermate - Blog Web Application" available in this GitHub repository.
 
+----------
+
 ## Technologies Used
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![EJS](https://img.shields.io/badge/EJS-8B0000?style=for-the-badge)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+----------
 
 ## Project Description
 
@@ -33,6 +37,8 @@ To explore how the application works, the following resources are available:
 
 • The layout and design are implemented using Bootstrap.
 
+----------
+
 ##  Features
 
 1. Post creation: users can create new blog posts.
@@ -43,6 +49,8 @@ To explore how the application works, the following resources are available:
    
 4. Styling: the application should be well-styled and responsive, providing a good experience on both desktop and mobile devices.
 
+----------
+
 ## Technical Requirements
 
 1. Node.js and Express.js: the application will be a web server built with Node.js and Express.js. Express will handle routing and middleware.
@@ -51,10 +59,14 @@ To explore how the application works, the following resources are available:
 
 3. Bootstrap: used for styling and responsiveness, ensuring a clean and consistent layout on all devices.
 
+----------
+
 ## About me
 - 📧 [sainas.manolo@gmail.com](mailto:sainas.manolo@gmail.com)  
 - 🔗 [GitHub](https://github.com/ManoloSainas)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/manolosainas/)
+
+----------
 
 ## License
 
