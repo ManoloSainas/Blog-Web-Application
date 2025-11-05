@@ -9,11 +9,11 @@ To explore how the application works, the following resources are available:
 
 (It may take up to one minute for the app to start, as it is hosted on a free service.)
 
-<hr style="border: 0.5px solid #dcdcdc; margin: 16px 0;">
+<hr style="border: 0.2px solid #dcdcdc; margin: 16px 0;">
 
 • Demo Video: A demonstration video showing the main features of the application is available on YouTube at https://www.youtube.com/watch?v=eR4eT8EPa1g
 
-<hr style="border: 0.5px solid #dcdcdc; margin: 16px 0;">
+<hr style="border: 0.2px solid #dcdcdc; margin: 16px 0;">
 
 • Screenshots: The main screens of the application can be found in the folder "Schermate - Blog Web Application" available in this GitHub repository.
 
