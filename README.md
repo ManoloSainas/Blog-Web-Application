@@ -4,19 +4,20 @@
 
 To explore how the application works, the following resources are available:
 
+
 • Live Application: The project is hosted on Render.com and can be tested at https://blog-web-application-lkhg.onrender.com
 
 (It may take up to one minute for the app to start, as it is hosted on a free service.)
 
-----------
+
 
 • Demo Video: A demonstration video showing the main features of the application is available on YouTube at https://www.youtube.com/watch?v=eR4eT8EPa1g
 
-----------
+
 
 •Screenshots: The main screens of the application can be found in the folder "Schermate - Blog Web Application" available in this GitHub repository.
 
-----------
+
 
 ## Technologies Used
 
@@ -25,7 +26,7 @@ To explore how the application works, the following resources are available:
 ![EJS](https://img.shields.io/badge/EJS-8B0000?style=for-the-badge)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-----------
+
 
 ## Project Description
 
@@ -37,7 +38,7 @@ To explore how the application works, the following resources are available:
 
 • The layout and design are implemented using Bootstrap.
 
-----------
+
 
 ##  Features
 
@@ -49,7 +50,7 @@ To explore how the application works, the following resources are available:
    
 4. Styling: the application should be well-styled and responsive, providing a good experience on both desktop and mobile devices.
 
-----------
+
 
 ## Technical Requirements
 
@@ -59,14 +60,14 @@ To explore how the application works, the following resources are available:
 
 3. Bootstrap: used for styling and responsiveness, ensuring a clean and consistent layout on all devices.
 
-----------
+
 
 ## About me
 - 📧 [sainas.manolo@gmail.com](mailto:sainas.manolo@gmail.com)  
 - 🔗 [GitHub](https://github.com/ManoloSainas)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/manolosainas/)
 
-----------
+
 
 ## License
 
