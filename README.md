@@ -4,13 +4,17 @@
 
 To explore how the application works, the following resources are available:
 
-• Live Application: The project is hosted on Render.com and can be tested at https://blog-web-application-lkhg.onrender.com
+• Live Application: The project is hosted on Render.com and can be tested at 
+
+https://blog-web-application-lkhg.onrender.com
 
 (It may take up to one minute for the app to start, as it is hosted on a free service.)
 
 ----------
 
-• Demo Video: A demonstration video showing the main features of the application is available on YouTube at https://www.youtube.com/watch?v=eR4eT8EPa1g
+• Demo Video: A demonstration video showing the main features of the application is available on YouTube at 
+
+https://www.youtube.com/watch?v=eR4eT8EPa1g
 
 ----------
 
