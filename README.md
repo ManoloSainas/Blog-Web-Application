@@ -34,3 +34,14 @@
 2. EJS: used as a template engine to generate dynamic HTML based on the application's state.
 
 3. Bootstrap: used for styling and responsiveness, ensuring a clean and consistent layout on all devices.
+
+## About me
+- 📧 [sainas.manolo@gmail.com](mailto:sainas.manolo@gmail.com)  
+- 🔗 [GitHub](https://github.com/ManoloSainas)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/manolosainas/)
+
+## License
+
+This project was created for educational purposes.
+
+© 2025 – Manolo Sainas
